@@ -1,3 +1,36 @@
+# 🧠 Autism Prediction Using Machine Learning
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Olamaryse/autism-prediction/blob/main/Autism_Prediction.ipynb)
+
+This project uses machine learning to predict the likelihood of Autism Spectrum Disorder (ASD) based on a screening dataset. It combines data preprocessing, visualization, and classification techniques to build a robust and interpretable prediction model.
+
+---
+
+## 📊 Dataset Overview
+
+The dataset contains responses to a 10-item screening questionnaire and demographic information. The target variable is `Class/ASD`, which indicates a positive or negative ASD screening result.
+
+### 🔍 Key Features:
+- `A1_Score` to `A10_Score`: Responses to AQ-10 screening questions
+- `age`, `gender`, `ethnicity`, `jaundice`, `autism`: Demographic and medical history
+- `result`: Aggregated score from the AQ-10
+- `used_app_before`, `relation`: Screening history and test taker relationship
+- `Class/ASD`: **Target** – 0 (No ASD) or 1 (ASD)
+
+---
+
+## 🧹 Data Preprocessing
+
+- **Missing Value Handling**: Checked and addressed missing or null values.
+- **Categorical Encoding**: Converted textual features into numerical values using label encoding.
+- **Feature Selection**: Removed redundant or uninformative columns (e.g., `ID`, `age_desc`).
+
+```python
+
+
+
+
+
 # Autism Spectrum Disorder Prediction
 ## Project Overview
 ### This project focuses on developing a machine learning model to predict Autism Spectrum Disorder (ASD) based on a comprehensive dataset. Leveraging a range of data preprocessing techniques, exploratory data analysis, and advanced classification algorithms, this solution aims to provide an accurate predictive tool that can potentially aid in early screening and intervention.
