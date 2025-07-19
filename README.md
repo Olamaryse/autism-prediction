@@ -1,47 +1,47 @@
-Autism Spectrum Disorder Prediction
-Project Overview
-This project focuses on developing a machine learning model to predict Autism Spectrum Disorder (ASD) based on a comprehensive dataset. Leveraging a range of data preprocessing techniques, exploratory data analysis, and advanced classification algorithms, this solution aims to provide an accurate predictive tool that can potentially aid in early screening and intervention.
+# Autism Spectrum Disorder Prediction
+## Project Overview
+### This project focuses on developing a machine learning model to predict Autism Spectrum Disorder (ASD) based on a comprehensive dataset. Leveraging a range of data preprocessing techniques, exploratory data analysis, and advanced classification algorithms, this solution aims to provide an accurate predictive tool that can potentially aid in early screening and intervention.
 
-Key Objectives:
+<em>Key Objectives:</em>
 
-Data Understanding & Preprocessing: Thoroughly examine the dataset, handle missing values, correct inconsistencies, and transform categorical features into a suitable format for machine learning.
+* Data Understanding & Preprocessing: Thoroughly examine the dataset, handle missing values, correct inconsistencies, and transform categorical features into a suitable format for machine learning.
 
-Exploratory Data Analysis (EDA): Visualize and analyze data distributions and relationships to gain insights into the factors influencing ASD.
+* Exploratory Data Analysis (EDA): Visualize and analyze data distributions and relationships to gain insights into the factors influencing ASD.
 
-Model Development: Implement and evaluate various classification algorithms, including Decision Trees, Random Forests, and XGBoost, to identify the most effective predictive model.
+* Model Development: Implement and evaluate various classification algorithms, including Decision Trees, Random Forests, and XGBoost, to identify the most effective predictive model.
 
-Performance Evaluation: Assess model accuracy, precision, recall, and F1-score using appropriate metrics and techniques like cross-validation and confusion matrices.
+* Performance Evaluation: Assess model accuracy, precision, recall, and F1-score using appropriate metrics and techniques like cross-validation and confusion matrices.
 
-Dataset Description
+## Dataset Description
 The dataset used in this project contains information from an Autism Spectrum Quotient (AQ) 10-item screening tool, along with demographic and medical history details.
 
-Features:
+### Features:
 
-ID: Unique patient identifier.
+* `ID:` Unique patient identifier.
 
-A1_Score to A10_Score: Scores from the AQ-10 screening tool (binary: 0 or 1).
+* `A1_Score to A10_Score:` Scores from the AQ-10 screening tool (binary: 0 or 1).
 
-age: Age of the patient in years.
+* `age:` Age of the patient in years.
 
-gender: Gender of the patient (f or m).
+* `gender:` Gender of the patient (f or m).
 
-ethnicity: Patient's ethnicity.
+* `ethnicity:` Patient's ethnicity.
 
-jaundice: Indicates if the patient had jaundice at birth (yes or no).
+* `jaundice:` Indicates if the patient had jaundice at birth (yes or no).
 
-austim: Indicates if an immediate family member has been diagnosed with autism (yes or no).
+* `austim:` Indicates if an immediate family member has been diagnosed with autism (yes or no).
 
-contry_of_res: Country of residence.
+* `contry_of_res:` Country of residence.
 
-used_app_before: Whether the patient underwent a screening test before (yes or no).
+* `used_app_before:` Whether the patient underwent a screening test before (yes or no).
 
-result: Raw score from the AQ1-10 screening test.
+* `result:` Raw score from the AQ1-10 screening test.
 
-age_desc: Age group description (e.g., "18 and more").
+* `age_desc:` Age group description (e.g., "18 and more").
 
-relation: Relationship of the person who completed the test (e.g., "Self", "Parent").
+* `relation:` Relationship of the person who completed the test (e.g., "Self", "Parent").
 
-Class/ASD: Target variable, classified as 0 (No ASD) or 1 (Yes ASD).
+* `Class/ASD:` Target variable, classified as 0 (No ASD) or 1 (Yes ASD).
 
 Data Preprocessing and Cleaning
 The initial data inspection revealed several aspects requiring preprocessing to ensure data quality and model readiness:
@@ -52,9 +52,9 @@ The dataset was loaded using pandas.
 
 df.head() and df.info() were used to get a quick overview of the data structure, column types, and non-null counts.
 
-Data Type Conversion:
+### Data Type Conversion:
 
-The age column, initially of float64 type, was converted to int64 to represent age as whole numbers.
+* The age column, initially of float64 type, was converted to int64 to represent age as whole numbers.
 
 Handling Irrelevant Columns:
 
@@ -85,7 +85,7 @@ A histogram with a Kernel Density Estimate (KDE) was plotted for the age column.
 
 The mean age was found to be approximately 27.96 years, and the median age was 24.0 years. The presence of a tail to the right indicates a right-skewed distribution, with a higher concentration of younger individuals and fewer older individuals in the dataset.
 
-Visualizations:
+## Visualizations:
 
 Result Score Distribution:
 
@@ -93,7 +93,7 @@ A histogram with KDE was plotted for the result column (AQ1-10 screening test sc
 
 The mean result score was approximately 8.54, and the median was 9.61. This distribution also appears to be somewhat skewed, providing insights into the typical range of scores.
 
-Visualizations:
+## Visualizations:
 
 (Further EDA on categorical features and bivariate analysis would typically follow, but this summary focuses on the provided notebook content.)
 
